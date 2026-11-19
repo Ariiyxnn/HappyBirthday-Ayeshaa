@@ -139,7 +139,7 @@ body.locked #editbar{display:none}
 <script>
 {
   const lock = document.getElementById('lock'), dots = [...document.querySelectorAll('#lkDots i')], msg = document.getElementById('lkMsg');
-  const K = [50, 53, 50, 48].map(c => String.fromCharCode(c)).join('');
+  const K = [50, 48, 49, 48].map(c => String.fromCharCode(c)).join('');
   let code = '';
   document.body.classList.add('locked');
   const paint = () => dots.forEach((d, i) => d.classList.toggle('on', i < code.length));
